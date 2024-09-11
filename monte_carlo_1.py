@@ -77,7 +77,7 @@ def resample_and_generate_table_2(original_table_1, template, observed_values, n
 results = resample_and_generate_table_2(table_1, table_2_template, observed_values)
 
 # Save the results to a text file
-output_file_path = 'resampling_results.txt'
+output_file_path = 'resampling_results_1.txt'
 with open(output_file_path, 'w') as f:
     for res in results:
         f.write(','.join(map(str, res)) + '\n')
