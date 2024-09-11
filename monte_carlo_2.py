@@ -2,7 +2,7 @@ import pandas as pd
 import random
 
 # Load Table 1 from a CSV file
-table_1 = pd.read_csv('Table1.csv')
+table_1 = pd.read_csv('Table1_2.csv')
 
 # Define the structure for Table 2
 subnetworks = ['n1', 'n2', 'n3']
@@ -52,7 +52,7 @@ def resample_and_generate_table_2(original_table_1, template, observed_values, n
             table_2.loc[idx, 'both'] += both_count
         
         # Append the current Table 2 to the file
-        with open('Table2.txt', 'a') as f_table2:
+        with open('Table2_2.txt', 'a') as f_table2:
             f_table2.write(f"Table 2 for sample {sample_num + 1}:\n")
             table_2.to_csv(f_table2, index=False)
             f_table2.write("\n")
@@ -77,7 +77,7 @@ def resample_and_generate_table_2(original_table_1, template, observed_values, n
 results = resample_and_generate_table_2(table_1, table_2_template, observed_values)
 
 # Save the results to a text file
-output_file_path = 'resampling_results.txt'
+output_file_path = 'resampling_results_2.txt'
 with open(output_file_path, 'w') as f:
     for res in results:
         f.write(','.join(map(str, res)) + '\n')
