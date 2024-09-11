@@ -1,5 +1,5 @@
 # SFPsimulations
-Monte Carlo simulations for the Drosophila seminal fluid proteome and gene age analysis. This project performs resampling-based simulations to assess the association between subnetworks and gene ages using observed data and 100,000 simulated datasets.
+Monte Carlo simulations for the _Drosophila_ seminal fluid proteome and gene age analysis. This project performs resampling-based simulations to assess the association between subnetworks and gene ages using observed data and 100,000 simulated datasets.
 
 ## Overview
 The analysis consists of two rounds of simulations:
